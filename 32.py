@@ -6,6 +6,7 @@ class Solution(object):
         :rtype: int
         """
         stack = []
+        # 记录有效的括号对的起始位置
         for i, c in enumerate(s):
             if not stack:
                 stack.append(i)
